@@ -15,6 +15,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+  /* HEADER / NAV BAR STYLES START */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -58,4 +59,84 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+ /* HEADER / NAVBAR STYLES END */
+
+ /* FOOTER STYLES START */
+footer {
+    background: var(--primary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+  /* STYLE ALL SECTION TAGS */
+section {
+    padding: 60px;
+}
+  /* END FOOTER STYLES */
+
+  /* HERO STYLES START */
+.hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+  /* SECTION TITLE STYLES START */
+.section-title {
+    font-size: 32px;
+    border-right: 3px solid;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: end;
+    margin: 0 0 35px 10px;
+    width: 7%;
+}
+
+.primary-border {
+    padding-right: 5px;
+    border-color: var(--secondary-color);
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+  /* SECTION TITLE STYLES END */
+
+.flex-row {
+    display: flex;
+}
+
+.flex-row p{
+
 }
