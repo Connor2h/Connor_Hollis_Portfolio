@@ -140,3 +140,7 @@ section {
 .flex-row p{
 
 }
+
+.project img {
+    width: 100%;
+}
