@@ -115,14 +115,29 @@ header nav ul li a:hover {
 .flex-row {
     display: flex;
     align-content: space-between;
-    align-items: stretch;
+
 }
 
+.flex-box-row {
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+}
 
+.projects h3, .projects p {
+    background-color: var(--primary-color);
+    font-size: 30px;
+    margin: 0px 75px 5px 0px;
+}
 
 .project img {
-    width: 50%;
+    width: 95%;
+    height: 80%;
+    border: var(--primary-color) solid;
+    margin: 10px auto 10px auto;
+
 }
+
 
 .about-me-img img{
     margin-left: 5%;
