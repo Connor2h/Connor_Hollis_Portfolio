@@ -95,10 +95,15 @@ header nav ul li a:hover {
     padding-bottom: 20px;
     text-align: end;
     width: 7%;
+    margin-right: 100px;
+}
+
+.section-title h2 {
+    margin-right: 200px;
 }
 
 .primary-border {
-    padding-right: 5px;
+    padding-right: 20px;
     border-color: var(--primary-color);
 }
 
@@ -126,7 +131,9 @@ header nav ul li a:hover {
 }
 
 .about-me-text {
-    margin-left: 2%;
+    display: flexbox;
+    flex-wrap: wrap;
+    margin-left: 5%;
 }
 
  /* FOOTER STYLES START */
