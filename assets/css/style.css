@@ -8,13 +8,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 
 body {
     color: var(--secondary-color);
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(145, 145, 145);
+    background-color: rgb(151, 174, 180);
 }
 
   /* HEADER / NAV BAR STYLES START */
@@ -90,12 +90,12 @@ header nav ul li a:hover {
   /* SECTION TITLE STYLES START */
 .section-title {
     font-size: 32px;
-    border-right: 3px solid;
+    border-right: 12px solid;
     color: var(--primary-color);
     padding-bottom: 20px;
     text-align: end;
     width: 7%;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 
 .section-title h2 {
@@ -124,25 +124,33 @@ header nav ul li a:hover {
     justify-content: space-between;
 }
 
-.projects h3, .projects p {
-    background-color: var(--primary-color);
-    font-size: 30px;
-    margin: 0px 75px 5px 0px;
-}
-
 .project img {
     width: 95%;
     height: 80%;
     border: var(--primary-color) solid;
-    margin: 10px auto 10px auto;
+    margin: 10px 658px 10px auto;
 
+}
+
+.projects h3 {
+    background-color: var(--primary-color);
+    font-size: 30px;
+    padding: 0px 0px 0px 50px;
+    margin: -6px 75px 5px 0px;
+}
+
+.projects p {
+    background-color: var(--primary-color);
+    font-size: 25px;
+    padding: 0px 0px 0px 50px;
+    margin: -6px 75px 5px 0px;
 }
 
 
 .about-me-img img{
-    margin-left: 5%;
     width: 300px;
     height: 300px;
+    border: var(--primary-color) solid;
 }
 
 .about-me-text {
@@ -152,7 +160,7 @@ header nav ul li a:hover {
 }
 
  /* FOOTER STYLES START */
- footer {
+footer {
     background: var(--background-color);
     display: flex;
     justify-content: space-between;
@@ -187,7 +195,12 @@ footer a {
 }
 
   /* STYLE ALL SECTION TAGS */
-section {
+.section {
     padding: 60px;
 }
   /* END FOOTER STYLES */
+
+.section-margins{
+    margin: 10px;
+    margin-left: 50px;
+}
