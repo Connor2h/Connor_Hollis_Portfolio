@@ -2,7 +2,7 @@
     --primary-color: #38f5fc;
     --secondary-color: #024e76;
     --tertiary-color: #39a6b2;
-    --background-color: #3f3f3f
+    --background-color: #202124
 }
 
 * {
@@ -11,17 +11,17 @@
     padding: 0px;
 }
 
+/* Set main viewport width */
 main {
     width: 100vw;
 }
 
-
-
 body {
     color: var(--secondary-color);
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(151, 174, 180);
-    /* overflow-x: hidden; */
+    background-color: rgb(146, 146, 146);
+    color: var(--background-color);
+    overflow-x: hidden;
 }
 
   /* HEADER / NAV BAR STYLES START */
@@ -93,15 +93,11 @@ header nav ul li a:hover {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
+    margin-bottom: 15px;
 }
+  /* HERO STYLES END */
 
   /* SECTION TITLE STYLES START */
-
-  /* STYLE ALL SECTION TAGS */
-/* section {
-    padding: 10px 10px 10px 10px;
-} */
-
 .section-title {
     font-size: 32px;
     border-right: 12px solid;
@@ -116,16 +112,19 @@ header nav ul li a:hover {
 }
 
 .primary-border {
-    padding-right: 96px;
+    padding-right: 43px;
+    margin: 0px 3px;
     border-color: var(--primary-color);
 }
 
 .secondary-border {
     border-color: var(--primary-color);
+    margin: 0px 3px;
     padding-right: 109px;
 }
   /* SECTION TITLE STYLES END */
 
+/* WORK SECTION STYLES START */
 .work-section {
     display: flex;
     margin-top: 20px;
@@ -133,17 +132,11 @@ header nav ul li a:hover {
 
 .flex-row {
     display: flex;
-    /* align-content: space-between; */
-    /* flex-wrap: wrap; */
-    /* padding: 10px 20px;
-    text-align: left; */
-
 }
 
 .projects {
     width: 75%;
     height: 75%;
-    /* margin: 0 auto; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -153,41 +146,44 @@ header nav ul li a:hover {
     border: 3px solid var(--primary-color);
 }
 
-.project-one {
-    flex-shrink: 80%;
-    flex-basis: auto;
-    background: url(../images/surf.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 400px;
-    width: 400px;
-    /* Dont need width */
-    position: relative;
-    border: 2px solid var(--primary-color);
-}
-
 .first-project img{
     height: 540px;
+}
+
+.first-project img:hover{
+    opacity: 0.5;
 }
 
 .second-projects img{
     height: 309px;
 }
 
+.second-projects img:hover{
+    opacity: 0.5;
+}
+
 .third-projects img{
     height: 330px;
+}
+
+.third-projects img:hover{
+    opacity: 0.5;
 }
 
 .fourth-projects img{
     height: 540px;
 }
 
+.fourth-projects img:hover{
+    opacity: 0.5;
+}
+
 .project-description {
     width: 300px;
     position: relative;
     background-color: var(--primary-color);
-    bottom: 107px;
-    left: 24px;
+    bottom: 6px;
+    left: 0px;
 }
 
 .project-description h3{
@@ -198,99 +194,11 @@ font-size: 40px;
     font-size: 30px;
     }
 
-.project-led {
-    display: flex;
-    flex-basis: auto;
-    background: url(../images/led.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 400px;
-    width: 300px;
-    /* Dont need width */
-    position: relative;
-    border: 2px solid var(--primary-color);
-}
-
-.project-cal {
-    display: flex;
-    flex-basis: auto;
-    background: url(../images/calculator.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 400px;
-    width: 300px;
-    /* Dont need width */
-    position: relative;
-    border: 2px solid var(--primary-color);
-    padding: 0px;
-}
-
-.project-pastel {
-    display: flex;
-    flex-basis: auto;
-    background: url(../images/pastel.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 400px;
-    width: 800px;
-    /* Dont need width */
-    position: relative;
-    border: 2px solid var(--primary-color);
-}
-
-.project-run-buddy {
-    display: flex;
-    flex-basis: auto;
-    background: url(../images/runbuddy.JPG);
-    background-position: center center;
-    background-size: cover;
-    height: 400px;
-    width: 800px;
-    /* Dont need width */
-    position: relative;
-    border: 2px solid var(--primary-color);
-}
-
-.project-art {
-    display: flex;
-    flex-basis: auto;
-    background: url(../images/website.JPG);
-    background-position: center center;
-    background-size: cover;
-    height: 400px;
-    /* Dont need width */
-    position: relative;
-    border: 2px solid var(--primary-color);
-}
-
-/* .project img {
-    width: 87%;
-    height: 87%;
-    border: var(--primary-color) solid;
-    margin: 10px 0px 10px 0px;
-} */
-
-
-
 .flex-box-row {
     display: flex;
     flex-basis: auto;
     /* justify-content: space-between; */
 }
-
-/* .projects h3 {
-    background-color: var(--primary-color);
-    font-size: 30px;
-    padding: 0px 0px 0px 50px;
-    margin: -6px -59px 5px 0px;
-}
-
-.projects p {
-    background-color: var(--primary-color);
-    font-size: 25px;
-    padding: 0px 0px 0px 50px;
-    margin: -6px -59px 5px 0px;
-} */
 
 .project {
     display: flex;
@@ -309,19 +217,7 @@ font-size: 40px;
     flex-wrap: wrap;
     margin-left: 25px;
 }
-
-/* .about-me-img img{
-    width: 100%;
-    height: 100%;
-    border: var(--primary-color) solid;
-    justify-content: center;
-    text-align: center;
-
-} */
-
-/* article{
-    display: inline-flexbox;
-} */
+/* WORK SECTION STYLES END */
 
  /* FOOTER STYLES START */
 footer {
@@ -357,9 +253,6 @@ footer a {
     list-style: none;
 }
 
-
-
-
   /* END FOOTER STYLES */
 
 @media screen and (max-width: 1024px){
@@ -369,7 +262,7 @@ footer a {
     }
 
     .second-projects img{
-        height: 272px;
+        height: 228px;
     }
 
     .third-projects img{
@@ -381,8 +274,6 @@ footer a {
     }
 
 }
-
-
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -411,6 +302,10 @@ footer a {
         text-align: center;
         width: 100%;
         justify-content: center;
+    }
+
+    .hero {
+        margin-bottom: 0px;
     }
 
     .hero-cta, .hero-form {
@@ -463,36 +358,31 @@ footer a {
     .fourth-projects img{
         height: 400px;
     }
-
 }
 
 @media screen and (max-width: 768px){
 
     .first-project img{
-        height: 260px;
+        height: 340px;
     }
 
     .second-projects img{
-        height: 298px;
+        height: 394px;
     }
 
     .third-projects img{
-        align-content: left;
-        height: 246px;
+        height: 328px;
     }
 
     .fourth-projects img{
-        height: 279px;
+        height: 369px;
     }
-
-
-
 }
 
 @media screen and (max-width: 425px){
 
     .first-project img{
-        height: 194px;
+        height: 187px;
     }
 
     .second-projects img{
@@ -529,20 +419,20 @@ footer a {
 @media screen and (max-width: 375px){
 
     .first-project img{
-        height: 172px;
+        height: 166px;
     }
 
     .second-projects img{
-        height: 197px;
+        height: 193px;
     }
 
     .third-projects img{
         align-content: left;
-        height: 167px;
+        height: 161px;
     }
 
     .fourth-projects img{
-        height: 186px;
+        height: 180px;
     }
 
     .project-description {
@@ -566,20 +456,20 @@ footer a {
 @media screen and (max-width: 320px){
 
     .first-project img{
-        height: 148px;
+        height: 143px;
     }
 
     .second-projects img{
-        height: 171px;
+        height: 166px;
     }
 
     .third-projects img{
         align-content: left;
-        height: 143px;
+        height: 136px;
     }
 
     .fourth-projects img{
-        height: 160px;
+        height: 152px;
     }
 
     .project-description {
